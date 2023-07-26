@@ -59,5 +59,6 @@
     tool = nvimmerge
 [mergetool "nvimmerge"]
     cmd = nvim -d $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
-[rerere]
-	enabled = true
+[url "git@github.com:"]
+	insteadOf = git://github.com/
+	insteadOf = https://github.com/

@@ -1,5 +1,10 @@
 jorgebucaran/autopair.fish
 jethrokuan/fzf
 jorgebucaran/replay.fish
-jorgebucaran/fisher
 catppuccin/fish
+jorgebucaran/fisher
+<<<<<<< Updated upstream:fish/plugins
+catppuccin/fish
+=======
+rodrigobdz/fish-apple-touchbar
+>>>>>>> Stashed changes:fisher/plugins

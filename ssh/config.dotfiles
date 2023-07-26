@@ -3,6 +3,14 @@
 Host *
 	ServerAliveInterval 60
 
+#host github.com
+#    hostname github.com
+#    user git
+#    identityfile ~/.ssh/id_rsa_haooliveira
+host github.com-haooliveira
+	hostname github.com
+	user git
+	identityfile ~/.ssh/id_rsa_haooliveira
 Host localhost
 	UserKnownHostsFile /dev/null
 	StrictHostKeyChecking no
