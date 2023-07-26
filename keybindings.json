@@ -1,0 +1,16 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+	{
+		"key": "shift+enter",
+		"command": "go.test.cursorOrPrevious",
+		"when": "editorTextFocus && editorLangId == 'go' && !findInputFocused && !replaceActive"
+	},
+	{
+		"key": "ctrl+shift+enter",
+		"command": "go.test.package"
+	},
+	{
+		"key": "shift+cmd+i",
+		"command": "editor.action.indentationToSpaces"
+	},
+]

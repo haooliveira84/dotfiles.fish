@@ -1,0 +1,219 @@
+{
+
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    "editor.fontSize": 14,
+    "editor.fontLigatures": true,
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "editor.trimAutoWhitespace": true,
+    "editor.tabCompletion": "on",
+    "editor.fontFamily": "'Inconsolata', Menlo, Monaco, 'Courier New', monospace",
+    "editor.smoothScrolling": true,
+    "editor.formatOnSave": false,
+    "editor.inlineSuggest.enabled": true,
+    "editor.cursorBlinking": "phase",
+    "editor.suggestSelection": "first",
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "boundary",
+    "window.restoreWindows": "none",
+    "files.autoSave": "onFocusChange",
+    "extensions.autoUpdate": true,
+    "window.title": "${activeEditorMedium}${separator}${rootName}",
+    "files.trimTrailingWhitespace": true,
+    "extensions.ignoreRecommendations": false,
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "/vendor": true
+    },
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.fontAliasing": "auto",
+    "workbench.editor.showIcons": true,
+    "explorer.confirmDragAndDrop": false,
+    "search.smartCase": true,
+    "files.associations": {
+        "*.tmpl": "gotemplate",
+        "*.py": "python"
+    },
+    "breadcrumbs.enabled": true,
+    "telemetry.telemetryLevel": "off",
+    "search.useGlobalIgnoreFiles": true,
+    "workbench.editor.highlightModifiedTabs": true,
+    "search.showLineNumbers": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "window.newWindowDimensions": "maximized",
+    "go.formatTool": "gofumpt",
+    "go.useCodeSnippetsOnFunctionSuggest": true,
+    "go.autocompleteUnimportedPackages": true,
+    "go.coverOnSingleTest": true,
+    "go.useLanguageServer": true,
+    "go.coverageDecorator": {
+        "type": "gutter"
+    },
+    "go.alternateTools": {
+        "go-langserver": "gopls"
+    },
+    "go.toolsManagement.autoUpdate": true,
+    "go.buildFlags": [
+        "-v"
+    ],
+    "go.testTimeout": "3m",
+    "go.testEnvVars": {
+        "IS_NO_COLOR": "true"
+    },
+    "go.testFlags": [
+        "-test.failfast",
+        "-v",
+    ],
+    "files.exclude": {
+        "yarn.lock": true,
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "workbench.preferredDarkColorTheme": "Dracula",
+    "files.insertFinalNewline": true,
+    "workbench.colorTheme": "Dracula",
+    "debug.console.fontSize": 14,
+    "diffEditor.codeLens": true,
+    "remote.SSH.remotePlatform": {
+        "darkstar.local": "linux"
+    },
+    "remote.SSH.remoteServerListenOnSocket": true,
+    "workbench.editor.untitled.hint": "hidden",
+    "github-actions.org-features": true,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "docker.showStartPage": false,
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": false,
+        "plaintext": true,
+        "markdown": false
+    },
+    "yaml.schemas": {
+        "/home/carlos/Developer/nfpm/www/docs/static/schema.json": "nfpm.yaml",
+        "/home/carlos/Developer/goreleaser/scripts/jsonschema/goreleaser.json": ".goreleaser.yml"
+    },
+    "redhat.telemetry.enabled": false,
+    "terminal.integrated.fontFamily": "monospace",
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.inheritEnv": true,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "go.delveConfig": {
+        "dlvLoadConfig": {
+            "followPointers": true,
+            "maxVariableRecurse": 1,
+            "maxStringLen": 64,
+            "maxArrayValues": 64,
+            "checkGoVersion": false,
+            "maxStructFields": -1
+        },
+        "apiVersion": 2,
+        "showGlobalVariables": false,
+        "debugAdapter": "legacy",
+        "substitutePath": []
+    },
+    "html.format.endWithNewline": true,
+    "html.format.indentHandlebars": true,
+    "html.format.templating": true,
+    "explorer.confirmDelete": false,
+    "[dockerfile]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    },
+    "security.workspace.trust.banner": "never",
+    "security.workspace.trust.startupPrompt": "never",
+    "security.workspace.trust.enabled": false,
+    "json.schemas": [],
+    "yaml.customTags": [
+        "!And",
+        "!And sequence",
+        "!If",
+        "!If sequence",
+        "!Not",
+        "!Not sequence",
+        "!Equals",
+        "!Equals sequence",
+        "!Or",
+        "!Or sequence",
+        "!FindInMap",
+        "!FindInMap sequence",
+        "!Base64",
+        "!Join",
+        "!Join sequence",
+        "!Cidr",
+        "!Ref",
+        "!Sub",
+        "!Sub sequence",
+        "!GetAtt",
+        "!GetAZs",
+        "!ImportValue",
+        "!ImportValue sequence",
+        "!Select",
+        "!Select sequence",
+        "!Split",
+        "!Split sequence"
+    ],
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "gitlens.advanced.messages": {
+        "suppressGitDisabledWarning": true
+    },
+    "python.formatting.provider": "black",
+  "cSpell.userWords": [
+    "boto",
+    "botocore",
+    "grupoboticario",
+    "Popen"
+  ],
+"prettier.endOfLine": "auto",
+"[python]": {
+  "editor.defaultFormatter": "ms-python.python"
+},
+"git.ignoreRebaseWarning": true,
+"[jsonc]": {
+  "editor.defaultFormatter": "HookyQR.beautify"
+},
+"diffEditor.ignoreTrimWhitespace": false,
+"aws.profile": "profile:authority",
+"[json]": {
+  "editor.defaultFormatter": "vscode.json-language-features"
+},
+"git.followTagsWhenSync": true,
+"git.pullTags": false,
+"vs-kubernetes": {
+  "vs-kubernetes.crd-code-completion": "enabled",
+  "vscode-kubernetes.kubectl-path.mac": "/Users/holiveira/.vs-kubernetes/tools/kubectl/kubectl",
+  "vscode-kubernetes.minikube-path.mac": "/Users/holiveira/.vs-kubernetes/tools/minikube/darwin-arm64/minikube",
+  "vscode-kubernetes.helm-path.mac": "/Users/holiveira/.vs-kubernetes/tools/helm/darwin-arm64/helm"
+},
+"terminal.integrated.scrollback": 1e+22,
+"python.globalModuleInstallation": true,
+"python.linting.banditEnabled": false,
+"python.linting.pylintEnabled": true,
+"python.linting.enabled": true,
+"editor.tabSize": 2,
+"editor.insertSpaces": true,
+"terraform.languageServer.enable": true,
+"git.autofetch": true,
+"githubPullRequests.pullBranch": "never",
+"editor.largeFileOptimizations": false,
+"prettier.embeddedLanguageFormatting": "off",
+"python.autoComplete.extraPaths": [
+
+],
+"python.analysis.extraPaths": [],
+"editor.detectIndentation": false,
+"[yaml]": {
+  "editor.defaultFormatter": "redhat.vscode-yaml"
+}
+}
