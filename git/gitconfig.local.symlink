@@ -1,64 +1,111 @@
 # vi: ft=gitconfig
-
-[alias]
-	co = checkout
-	count = shortlog -sn
-	g = grep --break --heading --line-number
-	gi = grep --break --heading --line-number -i
-	changed = show --pretty=\"format:\" --name-only
-	fm = fetch-merge
-	please = push --force-with-lease
-	commit = commit -am
-	commend = commit -s --amend --no-edit
-	lt = log --tags --decorate --simplify-by-decoration --oneline
-[color]
-	diff = auto
-	status = auto
-	branch = auto
-	ui = true
-[core]
-	excludesfile = ~/.gitignore
-	editor = nvim
-	compression = -1
-	autocrlf = input
-	whitespace = trailing-space,space-before-tab
-	precomposeunicode = true
 [advice]
 	addEmptyPathspec = false
-[gpg]
-	program = gpg
+
+[alias]
+	changed = "show --pretty=\"format:\" --name-only"
+	co = "checkout"
+	commend = "commit -s --amend --no-edit"
+	commit = "commit -s"
+	count = "shortlog -sn"
+	fm = "fetch-merge"
+	g = "grep --break --heading --line-number"
+	gi = "grep --break --heading --line-number -i"
+	lt = "log --tags --decorate --simplify-by-decoration --oneline"
+	please = "push --force-with-lease"
+	unshallow = "fetch --prune --tags --unshallow"
+
 [apply]
-	whitespace = nowarn
-[help]
-	autocorrect = 1
+	whitespace = "nowarn"
+
+[branch]
+	sort = "-committerdate"
+
+[color]
+	branch = "auto"
+	diff = "auto"
+	status = "auto"
+	ui = true
+
+[commit]
+	gpgSign = true
+
+[core]
+	autocrlf = "input"
+	compression = -1
+	editor = "nvim"
+	precomposeunicode = true
+	whitespace = "trailing-space,space-before-tab"
+
+[credential "https://gist.github.com"]
+	helper = "gh auth git-credential"
+
+[credential "https://github.com"]
+	helper = "gh auth git-credential"
+
+[diff]
+	algorithm = "histogram"
+	colorMoved = "plain"
+	mnemonicPrefix = true
+	renames = true
+
+[fetch]
+	all = true
+	prune = true
+
+[filter "lfs"]
+	clean = "git-lfs clean -- %f"
+	process = "git-lfs filter-process"
+	required = true
+	smudge = "git-lfs smudge -- %f"
+
+[format]
+	signOff = true
+
+[gpg]
+	format = "ssh"
+
+[gpg "openpgp"]
+	program = "gpg"
+
+[gpg "ssh"]
+	allowedSignersFile = "~/.ssh/allowed_signers"
+
 [grep]
 	extendRegexp = true
 	lineNumber = true
-[push]
-	autoSetupRemote = true
-	default = simple
-[submodule]
-	fetchJobs = 4
-[commit]
-	gpgsign = true
-[tag]
-	gpgsign = true
+
+[help]
+	autocorrect = 1
+
+[init]
+	defaultBranch = "main"
+
 [log]
 	showSignature = false
-[pull]
-    ff = only
-[init]
-    defaultBranch = main
-[format]
-	signOff = true
-[diff]
-    tool = nvimdiff
-[difftool "nvimdiff"]
-    cmd = nvim -d "$LOCAL" "$REMOTE"
+
 [merge]
-    tool = nvimmerge
-[mergetool "nvimmerge"]
-    cmd = nvim -d $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
-[url "git@github.com:"]
-	insteadOf = git://github.com/
-	insteadOf = https://github.com/
+	conflictStyle = "zdiff3"
+
+[pull]
+	ff = "only"
+
+[push]
+	autoSetupRemote = true
+	default = "simple"
+	followTags = true
+
+[rebase]
+	autoSquash = true
+	autoStash = true
+	updateRefs = true
+
+[rerere]
+	autoUpdate = true
+	enabled = true
+
+[submodule]
+	fetchJobs = 4
+
+[tag]
+	sort = "version:refname"

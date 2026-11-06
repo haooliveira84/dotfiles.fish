@@ -3,6 +3,7 @@
 # bootstrap installs things.
 
 set DOTFILES_ROOT (pwd -P)
+set --global --export DOTFILES $DOTFILES_ROOT
 
 function info
 	echo [(set_color --bold) ' .. ' (set_color normal)] $argv
@@ -130,7 +131,7 @@ fisher update
 	and success 'plugins'
 	or abort 'plugins'
 
-yes | fish_config theme save "Catppuccin Mocha"
+yes | fish_config theme save catppuccin-mocha --color-theme=dark
 	and success 'colorscheme'
 	or abort 'colorscheme'
 
